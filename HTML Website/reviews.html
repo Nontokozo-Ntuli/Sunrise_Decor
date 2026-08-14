@@ -1,0 +1,174 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Rate & Review Us | Sunrise Décor</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .review-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            color: var(--rose);
+        }
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .form-group textarea {
+            min-height: 120px;
+        }
+        
+        /* Star Rating */
+        .stars {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: flex-end;
+            gap: 5px;
+        }
+        .stars input {
+            display: none;
+        }
+        .stars label {
+            font-size: 2rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .stars input:checked ~ label,
+        .stars label:hover,
+        .stars label:hover ~ label {
+            color: var(--gold);
+        }
+
+        /* Displayed Reviews */
+        .testimonials {
+            margin-top: 60px;
+        }
+        .testimonial-card {
+            background: #fffaf7;
+            border-left: 5px solid var(--gold);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .testimonial-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .rating-stars {
+            color: var(--gold);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Sunrise Decor Logo" height="50">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="reviews.html" class="active">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h1>Rate & Review Us</h1>
+        <p>Your feedback helps us shine brighter. Thank you for celebrating with Sunrise Décor!</p>
+
+        <!-- Review Form -->
+        <div class="review-container">
+            <h2>Leave a Review</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="reviewer">Your Name</label>
+                    <input type="text" id="reviewer" name="reviewer" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Rate Your Experience</label>
+                    <div class="stars">
+                        <input type="radio" id="star5" name="rating" value="5" required>
+                        <label for="star5">★</label>
+                        <input type="radio" id="star4" name="rating" value="4">
+                        <label for="star4">★</label>
+                        <input type="radio" id="star3" name="rating" value="3">
+                        <label for="star3">★</label>
+                        <input type="radio" id="star2" name="rating" value="2">
+                        <label for="star2">★</label>
+                        <input type="radio" id="star1" name="rating" value="1">
+                        <label for="star1">★</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="event">Event Type</label>
+                    <input type="text" id="event" name="event" placeholder="e.g. Wedding, Birthday">
+                </div>
+
+                <div class="form-group">
+                    <label for="review">Your Review</label>
+                    <textarea id="review" name="review" placeholder="Tell us about your experience..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Submit Review</button>
+            </form>
+        </div>
+
+        <!-- Sample Reviews Display -->
+        <div class="testimonials">
+            <h2>What Our Clients Say</h2>
+            
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <strong>Sarah & John</strong>
+                    <span class="rating-stars">★★★★★</span>
+                </div>
+                <p><em>Wedding</em></p>
+                <p>Sunrise Décor made our dream wedding come true! The attention to detail and professionalism was outstanding. Highly recommend!</p>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <strong>The Bhele Family</strong>
+                    <span class="rating-stars">★★★★★</span>
+                </div>
+                <p><em>Graduation</em></p>
+                <p>Absolutely beautiful setup for my daughter's graduation. They were on time, friendly, and the décor was perfect. 10/10!</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sunrise Décor. All Rights Reserved. | Durban, South Africa</p>
+    </footer>
+</body>
+</html>
