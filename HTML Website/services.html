@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Sunrise Decor</title>
+     <link href="https://
+    fonts.googleapis.com/css2?
+    family=Playfair+Display:wght@400;700&family=
+    Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="css/
+       style.css">
+
+    <!-- Extra CSS just for the packages grid-->
+    <style>
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .package-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .package-card:hover {
+            transform: translateY(-5px);
+        }
+        .package-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .package-info {
+            padding: 20px;
+        }
+        .package-info h3 {
+            color: var(--rose);
+            margin-bottom: 10px;
+        }
+        .price {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <img src="images/logo.png" alt="Sunrise Decor Logo" height="50">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+     <!-- Main Content -->
+    <main class="container">
+        <h1>Our Services & Packages</h1>
+        <p>We offer tailored décor packages for every type of celebration. All packages include setup and collection.</p>
+
+        <!-- Packages Grid with Images -->
+        <div class="packages-grid">
+
+            <!-- Package 1: Weddings -->
+            <div class="package-card">
+                <img src="wedding picture1.jpg" alt="Wedding Décor Package">
+                <div class="package-info">
+                    <h3>Wedding Package</h3> 
+                    <p>Backdrop, bridal table, guest tables, centerpieces, and floral arrangements.</p>
+                    <p class="price">From R8,500</p>
+                    <div class="btn-group">
+                        <a href="enquiry.html" class="btn">Enquire Now</a>
+                        <a href="gallery.html#weddings" class="btn-secondary">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package 2: Birthdays -->
+            <div class="package-card">
+                <img src="birthday pic1.jpeg" alt="Birthday Décor Package">
+                <div class="package-info">
+                    <h3>Birthday Package</h3>
+                    <p>Themed balloon arch, table décor, candy station, and personalized signage.</p>
+                    <p class="price">From R2,500</p>
+                    <div class="btn-group">
+                        <a href="enquiry.html" class="btn">Enquire Now</a>
+                        <a href="gallery.html#birthdays" class="btn-secondary">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package 3: Graduations -->
+            <div class="package-card">
+                <img src="graduation pic1.webp" alt="Graduation Décor Package">
+                <div class="package-info">
+                    <h3>Graduation Package</h3>
+                    <p>Stage backdrop, photo booth, entrance décor, and balloon columns.</p>
+                    <p class="price">From R4,000</p>
+                    <div class="btn-group">
+                        <a href="enquiry.html" class="btn">Enquire Now</a>
+                        <a href="gallery.html#graduations" class="btn-secondary">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Package 4: Corporate -->
+            <div class="package-card">
+                <img src="corporate pic1.jpg" alt="Corporate Event Décor Package">
+                <div class="package-info">
+                    <h3>Corporate Package</h3>
+                    <p>Branded backdrops, stage setup, table styling, and elegant centerpieces.</p>
+                    <p class="price">From R6,000</p>
+                    <div class="btn-group">
+                        <a href="enquiry.html" class="btn">Enquire Now</a>
+                        <a href="gallery.html#corporate" class="btn-secondary">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Sunrise Décor. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
+   
