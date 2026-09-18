@@ -1,0 +1,69 @@
+* { margin:0; padding:0; box-sizing:border-box }
+body { font-family: Arial, sans-serif; background:#FFF9F0 }
+
+header { 
+  display:flex; 
+  justify-content:space-between; 
+  align-items:center; 
+  background:#FF6B8A; 
+  padding:12px 30px; 
+  height:60px; 
+  position:sticky; 
+  top:0; 
+  z-index:999 
+}
+header div { color:white; font-weight:900; font-size:18px }
+
+nav ul { 
+  display:flex; 
+  flex-direction:row; 
+  list-style:none; 
+  gap:18px; 
+  margin:0 
+}
+nav li { list-style:none }
+nav a { 
+  color:white; 
+  text-decoration:none; 
+  font-weight:800; 
+  font-size:13px; 
+  text-transform:uppercase 
+}
+nav a:hover { color:#2D2A4A }
+
+.page-header { background:linear-gradient(90deg,#FFF0E5,#FFE3EC); padding:60px; text-align:center }
+.page-header h1 { color:#D81B60; font-size:36px }
+
+.hero { background:linear-gradient(135deg,#FF8A65,#FF6B8A,#FFB703); color:white; text-align:center; padding:100px 20px }
+.hero h1 { font-size:48px }
+.btn { background:#2D2A4A; color:white; padding:14px 32px; border-radius:30px; text-decoration:none; display:inline-block; font-weight:bold; margin-top:10px }
+
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; padding:30px }
+.card { background:white; padding:25px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.08); border-top:5px solid #FFB703; text-align:center }
+.card h3 { color:#D81B60; margin-bottom:10px }
+
+.form-box { background:white; max-width:600px; margin:30px auto; padding:30px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.08); border-top:5px solid #FFB703 }
+label { display:block; margin:15px 0 5px; color:#333; font-weight:bold }
+input,select,textarea { width:100%; padding:12px; border:2px solid #FFD1D9; border-radius:8px }
+
+footer { background:#2D2A4A; color:white; text-align:center; padding:20px; margin-top:30px }
+
+.grid img {
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  border-radius: 15px !important;
+}
+.map-container iframe {
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  .map-container iframe {
+    height: 300px;
+  }
+  .contact-grid {
+    flex-direction: column;
+  }
+}
