@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sunrise Decor" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#fbbf24" />
+    <title>Contact | Sunrise Decor</title>
+    <meta
+      name="description"
+      content="Contact Sunrise Decor for wedding styling, birthday decor, graduation setups, and corporate event enquiries in Durban."
+    />
+    <meta
+      name="keywords"
+      content="Sunrise Decor contact, event decor enquiry, Durban event design, wedding decor contact, birthday decor"
+    />
+    <meta property="og:locale" content="en_ZA" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sunrise Decor" />
+    <meta property="og:title" content="Contact | Sunrise Decor" />
+    <meta
+      property="og:description"
+      content="Get in touch with Sunrise Decor for event styling, venue decoration, and custom design consultations."
+    />
+    <meta property="og:url" content="https://sunrisedecor.co.za/contact.html" />
+    <meta
+      property="og:image"
+      content="images/hero-01.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contact | Sunrise Decor" />
+    <meta
+      name="twitter:description"
+      content="Get in touch with Sunrise Decor for event styling, venue decoration, and custom design consultations."
+    />
+    <meta
+      name="twitter:image"
+      content="images/hero-01.png"
+    />
+    <link rel="canonical" href="https://sunrisedecor.co.za/contact.html" />
+    <link rel="icon" href="images/sunrise-decor-logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="brand">☀️ SUNRISE DECOR</div>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-hidden="true">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="review.html">Reviews</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form id="contact-form" class="form-box" action="mailto:info@sunrisedecor.co.za" method="post" enctype="text/plain" novalidate>
+      <label for="contact-name">Full Name</label>
+      <input id="contact-name" name="contact-name" type="text" required minlength="2" />
+
+      <label for="contact-email">Email</label>
+      <input id="contact-email" name="contact-email" type="email" required />
+
+      <label for="contact-phone">Phone</label>
+      <input
+        id="contact-phone"
+        name="contact-phone"
+        type="tel"
+        pattern="[0-9\s+()-]{8,20}"
+        required
+      />
+
+      <label for="subject">Message Type</label>
+      <select id="subject" name="subject" required>
+        <option value="">Please select</option>
+        <option value="General Inquiry">General Inquiry</option>
+        <option value="Support Request">Support Request</option>
+        <option value="Partnership">Partnership</option>
+      </select>
+
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" name="contact-message" placeholder="Tell us more about your celebration"></textarea>
+
+      <button type="submit">Send Email</button>
+      <p id="form-error" aria-live="polite"></p>
+    </form>
+
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item open">
+        <button class="faq-question" type="button" aria-expanded="true">How far do you travel?</button>
+        <div class="faq-answer">
+          <p>We serve clients across Durban and surrounding areas of KwaZulu-Natal, including Ballito, Umhlanga, and Pietermaritzburg.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">Do you offer custom themes?</button>
+        <div class="faq-answer">
+          <p>Yes. We design bespoke decor packages to fit your style, event size, and budget.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">How soon should I book?</button>
+        <div class="faq-answer">
+          <p>We recommend booking at least 4 to 8 weeks in advance, especially during busy wedding and holiday seasons.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>We’d love to hear from you</p>
+
+      <div class="contact-grid">
+        <div class="card">
+          📞 <b>Call Us</b><br />
+          082 123 4567<br />
+          Mon-Sat 8am-6pm
+        </div>
+
+        <div class="card">
+          📍 <b>Visit Us</b><br />
+          123 Florida Road<br />
+          Durban 4001<br />
+          South Africa
+        </div>
+
+        <div class="card">
+          ✉️ <b>Email Us</b><br />
+          hello@sunrisedecor.co.za
+        </div>
+
+        <div class="card">
+          🕒 <b>Office Hours</b><br />
+          Monday - Friday: 8:00 AM - 5:00 PM<br />
+          Saturday: 9:00 AM - 2:00 PM<br />
+          Sunday: Closed
+        </div>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=123%20Florida%20Road,%20Durban%204001&z=16&output=embed"
+          width="80%"
+          height="400"
+          style="border: 0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+    </section>
+
+    <footer>© 2026 Sunrise Decor | Durban, SA | info@sunrisedecor.co.za</footer>
+  </body>
+</html>
